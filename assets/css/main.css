@@ -1,0 +1,128 @@
+:root {
+    --gutter: 5px;
+    --black-text: #121212;
+    --white-text: #FFFFFF;
+    --gray-light: #ccc;
+    --blue-light: #4262f0;
+    --smooth: all 0.3s ease-in;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* header */
+.header {
+    box-shadow: 0 2px 4px #1f222929;
+}
+
+.header__topbar {
+    height: 32px;
+    padding-inline: 20px;
+}
+
+.header__logo .icon-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.header__logo .header__logo--text {
+    font-weight: 500;
+    margin-left: 16px;
+    font-size: 2rem;
+}
+
+.header__user .icon-user {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.header__main {
+    width: 100%;
+}
+
+.header__nav {
+     list-style: none;
+}
+
+.nav__item {
+
+}
+
+.nav__item.active a {
+    color: var(--blue-light);
+    border-bottom: solid 3px;
+}
+
+.nav__item:hover {
+    background-color: var(--gray-light);
+}
+
+.nav__item a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--black-text);
+    padding: 14px 16px;
+}
+
+.sidbar__left {
+    width: 300px;
+    height: calc(100vh - 87px);
+    border-right: solid 1px #ccc;
+}
+
+.sidbar__right {
+    width: 300px;
+    height: calc(100vh - 87px);
+    border-left: solid 1px #ccc;
+}
+
+.collapse-left-sidebar {
+    box-shadow: 1px 0 4px #00000029;
+    border-radius: 0 6px 6px 0;
+    background-color: #fff;
+    z-index: 10;
+    left: calc(100% + 1px);
+    top: calc(50% - 20px);
+    width: 12px;
+    height: 40px;
+    padding: 12px 0;
+    text-align: right;
+}
+
+.collapse-left-sidebar:hover {
+    cursor: pointer;
+    width: 15px;
+}
+
+.collapse-right-sidebar {
+    box-shadow: -2px 0 4px #00000029;
+    border-radius:  6px 0 0 6px;
+    background-color: #fff;
+    z-index: 10;
+    right: calc(100% + 1px);
+    top: calc(50% - 20px);
+    width: 12px;
+    height: 40px;
+    padding: 12px 0;
+}
+
+.collapse-right-sidebar:hover {
+    cursor: pointer;
+    width: 15px;
+}
